@@ -1,0 +1,70 @@
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Ensure padding doesn't affect element size */
+}
+
+body {
+    background: url('images/brown bg.JPG') /*no-repeat center center/cover*/;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.8); /* Add contrast to navbar */
+}
+
+nav a {
+    color: white; 
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: #ffcc00;
+}
+nav .denny{
+	position: absolute;
+	left: 100px;
+	font-size: 30px;
+}
+nav .denny:hover{
+	color:black;
+	background: white;
+}
+.first-logo{
+    max-width: 800px;
+    width: 60%;
+    position: absolute;
+    left: 50%; /* Move to the center horizontally */
+    top: 35px; /* Adjust as needed for vertical positioning */
+    transform: translateX(-50%); /* Center the element */
+    justify-content: center;
+    text-align: center;
+}
+.second-logo{
+    max-width: 550px;
+    width: 50%;
+    position: absolute;
+    left:-170px;
+    top: 120px;
+}
+.third-logo{
+    max-width: 550px;
+    width: 60%;
+    position: absolute;
+    left: 78%;
+    top: 230px;
+    
+}
