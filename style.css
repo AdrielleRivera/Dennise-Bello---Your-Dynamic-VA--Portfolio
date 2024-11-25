@@ -68,3 +68,28 @@ nav .denny:hover{
     top: 230px;
     
 }
+footer{
+ position:  fixed;
+    bottom: 0;       /* Align to the bottom of the viewport */
+    left: 0;         /* Align to the left edge */
+    width: 100%;     /* Make it span the entire width of the page */
+    background: rgba(0, 0, 0, 0.8); /* Background color for contrast */
+    color: white;    /* Text color for readability */
+    text-align: center; /* Center-align the text */
+    padding: 0.5rem; /* Add padding for spacing */
+    z-index: 1000;   /* Ensure it stays above other elements */
+    font-size: 1rem;
+}
+footer a{
+    color:  yellow;
+}
+footer a:hover{
+    color: black;
+    background:white;
+}
+footer p:first-of-type{
+    margin-bottom: 10px;
+}
+footer > p:first-of-type {
+    color: #f5deb3;
+}
