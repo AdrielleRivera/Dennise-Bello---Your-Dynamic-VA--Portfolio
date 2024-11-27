@@ -19,6 +19,7 @@ nav {
     align-items: center;
     padding: 1rem 1rem;
     background: rgba(0, 0, 0, 0.8); /* Add contrast to navbar */
+    
 }
 
 nav a {
@@ -27,12 +28,14 @@ nav a {
     font-size: 1rem;
     padding: 0.5rem 1rem;
     transition: background 0.3s, color 0.3s;
+    
 }
 
 nav a:hover {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     color: #ffcc00;
+    z-index: 1;
 }
 nav .denny{
 	position: absolute;
@@ -45,10 +48,10 @@ nav .denny:hover{
 }
 .first-logo{
     max-width: 800px;
-    width: 60%;
-    position: absolute;
+    width: 50%;
+    position: relative;
     left: 50%; /* Move to the center horizontally */
-    top: 20px; /* Adjust as needed for vertical positioning */
+    top: -35px; /* Adjust as needed for vertical positioning */
     transform: translateX(-50%); /* Center the element */
     justify-content: center;
     text-align: center;
