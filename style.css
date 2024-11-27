@@ -17,7 +17,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     background: rgba(0, 0, 0, 0.8); /* Add contrast to navbar */
 }
 
@@ -64,7 +64,7 @@ nav .denny:hover{
     max-width: 550px;
     width: 60%;
     position: absolute;
-    left: 78%;
+    left: 82%;
     top: 230px;
     
 }
@@ -92,4 +92,121 @@ footer p:first-of-type{
 }
 footer > p:first-of-type {
     color: #f5deb3;
+}
+#menu-bars{
+    position: fixed;
+    top: .5rem;
+    left: 25px;
+    padding: 1rem 1.5rem;
+    border-radius:.5rem;
+    color:red;
+    background:white;
+    cursor: pointer;
+    font-size: 1rem;
+    display: none;
+
+}
+
+/*media query starts here*/
+
+
+   @media (max-width:991px){
+    html{
+        font-size: 55%;
+        
+    }
+    body{
+        padding-right: 0;
+    }
+    header{
+        width:100%;
+        left:-120%;
+    }
+    header.active{
+        left:0%;
+    }
+    #menu-bars{
+        display: initial;
+    }
+    header .navbar a{
+        display: block;
+        font-size: 2rem;
+    }
+    .denny {display: none;
+    }
+    nav{
+        padding:1.7rem;
+    }
+
+    /*Put the logo or text here to become responsive*/
+    .first-logo{
+        left: 54%;
+        width:95%;
+        top:30px;
+    }
+    .second-logo{
+        top:360px;
+        left: -10%;
+        width: 52%;
+    }
+    .third-logo{
+        top:470px;
+        left:390px;
+    }
+
+
+
+
+
+    /*This is the burger button part!! yahoo(sorry this is an achievement for me)*/
+    #menu-bars {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: 30px;
+    padding: .8rem;
+    border-radius: .2rem;
+    color: red;
+    background: white;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 1001;
+    display: none; /* Outside media query */
+}
+    html{
+        font-size: 55%;
+    }
+    body{
+        padding-right: 0;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.9);
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+    header.active{
+        left: 0;
+    }
+    #menu-bars{
+        display: block; 
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    nav a{
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    .denny {
+        display: none;
+    }
 }
