@@ -48,7 +48,7 @@ nav .denny:hover{
     width: 60%;
     position: absolute;
     left: 50%; /* Move to the center horizontally */
-    top: 35px; /* Adjust as needed for vertical positioning */
+    top: 20px; /* Adjust as needed for vertical positioning */
     transform: translateX(-50%); /* Center the element */
     justify-content: center;
     text-align: center;
@@ -140,7 +140,7 @@ footer > p:first-of-type {
 
     /*Put the logo or text here to become responsive*/
     .first-logo{
-        left: 54%;
+        left: 52%;
         width:95%;
         top:30px;
     }
